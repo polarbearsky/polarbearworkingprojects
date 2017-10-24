@@ -1,0 +1,2086 @@
+[16:11:56][main] ServerLogger.error - ===== AoqiBankClient starting ======
+[16:11:56][main] ServerLogger.error - ===== AoqiBankClient started ======
+[16:12:13][main] ServerLogger.error - ~~~ext log~~~ <ExtensionAsynInitThreadPoolManagement> start await...
+[16:12:13][main] ServerLogger.error - ~~~ext log~~~ <ExtensionAsynInitThreadPoolManagement> successfully init all!
+[16:12:13][main] ServerLogger.error - The version is : 2017.09.12_01
+[16:14:19][Selector] ServerLogger.error - Buffer size error: -480903168
+[16:14:19][Selector] ServerLogger.error - Buffer size error: -480903168
+[16:21:59][Selector] ServerLogger.errorf - msg seq no match : User[1, altraserver-admin], in/tar[0/79]
+[16:21:59][MsgHandler-8] ServerLogger.error - ~~~ext log~~~ PJXDefineReloaders - invoke reloader[name=challenge description=读取可配置挑战的配置] start... 
+[16:22:00][MsgHandler-8] ServerLogger.error - ~~~ext log~~~ PJXDefineReloaders - invoke reloader[name=challenge description=读取可配置挑战的配置] success. cost 192(ms)
+[17:00:18][LostHandler-1] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.28] port[25081] name[homeland] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,261814582,325102,false,Fri Oct 20 16:12:27 CST 2017]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[17:00:39][LostHandler-1] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.180] port[25082] name[homeland1] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,310386455,4410761,false,Fri Oct 20 16:28:19 CST 2017]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[17:01:07][pool-42-thread-4] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,311361818,4513830,true,2017-10-20 16:31:16.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[17:01:09][MsgHandler-29] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,311361818,4513830]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 17 more
+[17:06:40][MsgHandler-44] ServerLogger.error - ~~~ext log~~~ <<SmallGameExtension>> finish game fail. r9 userId:2020768 score:50000
+[17:11:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:11:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:12:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:12:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:13:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:13:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:14:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:14:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:15:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:15:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:16:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:16:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:17:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:17:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:18:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:18:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:19:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:19:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:20:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:20:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:21:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:21:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:22:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:22:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:23:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:23:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:24:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:24:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:25:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:25:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:26:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:26:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:27:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:27:39][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:28:09][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:28:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:29:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:29:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:30:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:30:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:31:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:31:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:32:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:32:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:33:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:33:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:34:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:34:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:35:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:35:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:36:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:36:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:37:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:37:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:38:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:38:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:39:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:39:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:40:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:40:26][LostHandler-0] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,21284965,88833,false,Fri Oct 20 17:10:29 CST 2017]
+java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:229)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:162)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:215)
+	... 29 more
+[17:40:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:41:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:41:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:42:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:42:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:43:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:43:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:44:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:44:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:45:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:45:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:46:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:46:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:47:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:47:40][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:48:10][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:48:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:49:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:49:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:50:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:50:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:51:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:51:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:52:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:52:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:53:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:53:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:54:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:54:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:55:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:55:34][LostHandler-2] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,74348827,10076124,false,2017-10-20 15:02:29.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[17:55:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:56:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:56:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:57:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:57:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:58:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:58:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:59:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[17:59:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:00:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:00:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:00:45][pool-42-thread-9] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.180] port[25082] name[homeland1] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,151647177,2053,true,Fri Oct 20 18:00:42 CST 2017]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[18:00:53][MsgHandler-18] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.180] port[25082] name[homeland1] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,151647177,2053]
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.140.180; nested exception is: 
+	java.net.SocketTimeoutException: connect timed out
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:631)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:216)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.connect(AppCommon_CustomSocket.java:34)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.<init>(AppCommon_CustomSocket.java:17)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomRMIDirectSocketFactory.createSocket(AppCommon_CustomRMIDirectSocketFactory.java:17)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:613)
+	... 18 more
+[18:01:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:01:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:02:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:02:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:03:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:03:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:04:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:04:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:05:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:05:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:06:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:06:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:07:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:07:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:08:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:08:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:09:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:09:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:10:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:10:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:11:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:11:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:12:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:12:41][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:13:11][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:13:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:14:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:14:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:15:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:15:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:16:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:16:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:17:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:17:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:18:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:18:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:19:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:19:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:20:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:20:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:21:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:21:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:22:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:22:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:23:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:23:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:24:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:24:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:25:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:25:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:26:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:26:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:27:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:27:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:28:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:28:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:29:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:29:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:30:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:30:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:31:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:31:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:32:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:32:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:33:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:33:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:34:12][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:34:42][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:35:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:35:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:36:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:36:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:37:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:37:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:38:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:38:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:39:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:39:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:40:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:40:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:41:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:41:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:42:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:42:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:43:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:43:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:44:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:44:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:45:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:45:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:46:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:46:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:47:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:47:22][MsgHandler-4] ServerLogger.error - flood ext request:821526652/getSign
+[18:47:22][MsgHandler-4] ServerLogger.error - flood ext request:821526652/getSign
+[18:47:22][MsgHandler-4] ServerLogger.error - flood ext request:821526652/getSign
+[18:47:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:48:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:48:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:49:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:49:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:50:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:50:24][Selector] ServerLogger.errorf - msg seq no match : User[334065229, 645217429], in/tar[0/-161]
+[18:50:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:51:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:51:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:52:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:52:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:53:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:53:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:54:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:54:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:55:13][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:55:43][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:56:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:56:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:57:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:57:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:58:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:58:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:59:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:59:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[18:59:53][MsgHandler-15] ServerLogger.error - flood ext request:708267324/getSign
+[18:59:53][MsgHandler-15] ServerLogger.error - flood ext request:708267324/getSign
+[19:00:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:00:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:00:57][LostHandler-0] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.180] port[25082] name[homeland1] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,161533248,1858410,false,Fri Oct 20 16:59:39 CST 2017]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[19:00:58][MsgHandler-1] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.180] port[25082] name[homeland1] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,253825395,10095317]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 17 more
+[19:00:58][pool-42-thread-7] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.180] port[25082] name[homeland1] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,253825395,10095317,true,Fri Oct 20 19:00:52 CST 2017]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[19:01:08][pool-42-thread-3] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.180] port[25082] name[homeland1] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,151098672,10051008,true,2017-10-20 12:00:02.0]
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.140.180; nested exception is: 
+	java.net.SocketTimeoutException: connect timed out
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:631)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:216)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.connect(AppCommon_CustomSocket.java:34)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.<init>(AppCommon_CustomSocket.java:17)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomRMIDirectSocketFactory.createSocket(AppCommon_CustomRMIDirectSocketFactory.java:17)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:613)
+	... 19 more
+[19:01:13][pool-42-thread-4] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,153675949,10072296,true,Fri Oct 20 19:01:10 CST 2017]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[19:01:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:01:16][pool-42-thread-1] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,183498947,10046316,true,2017-10-20 12:12:18.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[19:01:16][MsgHandler-21] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,183498947,10046316]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 17 more
+[19:01:19][MsgHandler-25] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,153675949,10072296]
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.140.193; nested exception is: 
+	java.net.SocketTimeoutException: connect timed out
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:631)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:216)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.connect(AppCommon_CustomSocket.java:34)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.<init>(AppCommon_CustomSocket.java:17)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomRMIDirectSocketFactory.createSocket(AppCommon_CustomRMIDirectSocketFactory.java:17)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:613)
+	... 18 more
+[19:01:32][pool-42-thread-9] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,261938201,10038690,true,Fri Oct 20 19:01:29 CST 2017]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[19:01:34][pool-42-thread-7] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,302696418,4194141,true,2017-10-20 12:14:07.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[19:01:39][pool-42-thread-6] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.28] port[25081] name[homeland] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,330297178,10007807,true,Fri Oct 20 19:01:33 CST 2017]
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.140.28; nested exception is: 
+	java.net.SocketTimeoutException: connect timed out
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:631)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:216)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.connect(AppCommon_CustomSocket.java:34)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.<init>(AppCommon_CustomSocket.java:17)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomRMIDirectSocketFactory.createSocket(AppCommon_CustomRMIDirectSocketFactory.java:17)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:613)
+	... 19 more
+[19:01:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:02:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:02:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:03:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:03:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:04:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:04:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:05:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:05:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:06:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:06:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:07:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:07:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:08:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:08:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:09:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:09:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:10:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:10:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:11:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:11:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:12:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:12:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:13:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:13:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:14:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:14:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:15:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:15:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:16:14][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:16:44][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:17:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:17:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:18:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:18:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:19:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:19:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:20:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:20:40][RemoteMessageHandler-Thread] ServerLogger.error - ~~~ext log~~~ <<Force Logout>>: Cannot find User[880894077] in Zone[872 小蟹]
+[19:20:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:21:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:21:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:22:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:22:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:23:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:23:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:24:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:24:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:25:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:25:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:26:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:26:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:27:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:27:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:28:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:28:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:29:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:29:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:30:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:30:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:31:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:31:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:32:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:32:28][Selector] ServerLogger.error - Buffer size error: -2145058560
+[19:32:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:32:59][Selector] ServerLogger.error - Buffer size error: -2143289088
+[19:33:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:33:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:34:15][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:34:45][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:34:54][Selector] ServerLogger.errorf - msg seq no match : IP[114.67.36.98], in/tar[50331648/0]
+[19:35:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:35:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:36:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:36:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:37:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:37:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:38:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:38:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:39:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:39:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:40:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:40:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:41:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:41:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:42:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:42:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:43:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:43:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:44:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:44:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:45:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:45:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:46:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:46:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:47:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:47:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:48:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:48:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:49:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:49:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:50:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:50:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:51:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:51:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:52:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:52:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:53:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:53:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:54:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:54:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:55:16][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:55:46][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:56:18][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:56:22][Selector] ServerLogger.errorf - msg seq no match : User[332484, 144717301], in/tar[0/-161]
+[19:56:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:57:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:57:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:58:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:58:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:59:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[19:59:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:00:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:00:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:01:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:01:40][LostHandler-2] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.28] port[25081] name[homeland] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,264753284,10039062,false,Fri Oct 20 19:44:48 CST 2017]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[20:01:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:01:49][LostHandler-4] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.28] port[25081] name[homeland] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,122963134,10089206,false,2017-10-20 14:21:38.0]
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.140.28; nested exception is: 
+	java.net.SocketTimeoutException: connect timed out
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:631)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:216)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.connect(AppCommon_CustomSocket.java:34)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.<init>(AppCommon_CustomSocket.java:17)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomRMIDirectSocketFactory.createSocket(AppCommon_CustomRMIDirectSocketFactory.java:17)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:613)
+	... 31 more
+[20:02:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:02:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:03:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:03:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:04:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:04:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:05:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:05:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:06:18][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:06:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:07:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:07:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:08:17][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:08:47][MsgHandler-42] ServerLogger.error - flood ext request:817885710/42_1
+[20:57:09][MsgHandler-27] ServerLogger.error - flood ext request:240463914/2_1_R
+[20:57:09][MsgHandler-27] ServerLogger.error - flood ext request:240463914/2_1_R
+[20:57:09][MsgHandler-27] ServerLogger.error - flood ext request:240463914/2_1_R
+[20:57:11][MsgHandler-27] ServerLogger.error - flood ext request:240463914/2_1_R
+[20:57:11][MsgHandler-27] ServerLogger.error - flood ext request:240463914/2_1_R
+[20:57:12][MsgHandler-27] ServerLogger.error - flood ext request:240463914/2_1_R
+[20:57:13][MsgHandler-27] ServerLogger.error - flood ext request:240463914/2_1_R
+[20:57:14][MsgHandler-27] ServerLogger.error - flood ext request:240463914/2_1_R
+[20:57:16][MsgHandler-27] ServerLogger.error - flood ext request:240463914/2_1_R
+[20:57:16][MsgHandler-27] ServerLogger.error - flood ext request:240463914/2_1_R
+[21:01:31][LostHandler-1] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.180] port[25082] name[homeland1] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,233064724,360907,false,Fri Oct 20 19:47:07 CST 2017]
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.140.180; nested exception is: 
+	java.net.SocketTimeoutException: connect timed out
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:631)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:216)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.connect(AppCommon_CustomSocket.java:34)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.<init>(AppCommon_CustomSocket.java:17)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomRMIDirectSocketFactory.createSocket(AppCommon_CustomRMIDirectSocketFactory.java:17)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:613)
+	... 31 more
+[21:01:59][LostHandler-4] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.28] port[25081] name[homeland] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,360814279,4542706,false,2017-10-20 12:20:01.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[21:10:04][Selector] ServerLogger.errorf - msg seq no match : User[162040880, 543861415], in/tar[0/-161]
+[21:13:22][Selector] ServerLogger.errorf - msg seq no match : User[350608285, 629790482], in/tar[0/-161]
+[21:35:25][MsgHandler-25] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,153532935,10029890]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 17 more
+[21:35:34][pool-42-thread-9] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,102691322,10019228,true,Fri Oct 20 21:35:31 CST 2017]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[21:45:17][LostHandler-2] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.28] port[25081] name[homeland] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,80404620,93826,false,2017-10-20 17:06:27.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[21:50:34][pool-42-thread-8] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,207271,2282006,true,2017-10-20 13:31:29.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[22:01:52][pool-42-thread-7] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,214625549,2632429,true,2017-10-20 21:38:02.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[22:01:59][MsgHandler-16] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,214625549,2632429]
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.140.193; nested exception is: 
+	java.net.SocketTimeoutException: connect timed out
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:631)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:216)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.connect(AppCommon_CustomSocket.java:34)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.<init>(AppCommon_CustomSocket.java:17)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomRMIDirectSocketFactory.createSocket(AppCommon_CustomRMIDirectSocketFactory.java:17)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:613)
+	... 18 more
+[22:02:02][LostHandler-2] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,22218260,10066408,false,Fri Oct 20 21:12:45 CST 2017]
+java.rmi.ConnectIOException: Exception creating connection to: 192.168.140.193; nested exception is: 
+	java.net.SocketTimeoutException: connect timed out
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:631)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:216)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.connect(AppCommon_CustomSocket.java:34)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomSocket.<init>(AppCommon_CustomSocket.java:17)
+	at com.pjx.rmi.obj.app_common.AppCommon_CustomRMIDirectSocketFactory.createSocket(AppCommon_CustomRMIDirectSocketFactory.java:17)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:613)
+	... 31 more
+[22:02:08][pool-42-thread-8] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,232711893,4540752,true,2017-10-20 19:07:03.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[22:02:10][pool-42-thread-5] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.28] port[25081] name[homeland] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,331154876,10070250,true,2017-10-20 12:17:04.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[22:02:11][pool-42-thread-9] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,162329764,2653633,true,2017-10-20 22:00:57.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[22:02:11][MsgHandler-42] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.28] port[25081] name[homeland] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,331154876,10070250]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 17 more
+[22:02:11][MsgHandler-8] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,232711893,4540752]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 17 more
+[22:09:49][MsgHandler-6] ServerLogger.error - ~~~ext log~~~ validOwnFurniture get error. User dec furniture 108:1 but its usedNum is 0
+[22:14:01][LostHandler-2] ServerLogger.error - ~~~ext log~~~ FurnitureDb get error when insert UserFurniture as UsedNum is less than 0. And UserId is: 251482486
+[22:40:34][LostHandler-0] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,241100038,10087742,false,2017-10-20 19:21:09.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[22:44:55][RemoteMessageHandler-Thread] ServerLogger.error - ~~~ext log~~~ <<Force Logout>>: Cannot find User[490919826] in Zone[200 火巨人]
+[23:02:03][pool-42-thread-9] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,214205439,77946,true,2017-10-20 06:25:27.0]
+java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:229)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:162)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:215)
+	... 17 more
+[23:02:04][MsgHandler-10] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,204417831,10034634]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 17 more
+[23:02:05][MsgHandler-22] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,214205439,77946]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 17 more
+[23:02:06][LostHandler-3] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,262622975,10086315,false,Fri Oct 20 21:37:56 CST 2017]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[23:02:15][LostHandler-0] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.193] port[25086] name[homeland3] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,214205439,77946,false,2017-10-20 06:25:27.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[23:02:20][pool-42-thread-8] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,264514268,10041414,true,2017-10-20 21:56:12.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserLogin(HomeLandService.java:141)
+	at sun.reflect.GeneratedMethodAccessor38.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LoginHandler.run(UserStateNotify.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 18 more
+[23:02:23][MsgHandler-33] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[getHomeLandChatMessages] params[192.168.140.169:20009,264514268,10041414]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.getHomeLandChatMessages(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatHandler.handleGetHomeLandChatMessages(HomeLandChatHandler.java:75)
+	at com.altratek.altraserver.extensions.service.homeland.chat.HomeLandChatExtention.handleGetHomeLandChatMessages(HomeLandChatExtention.java:41)
+	at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 17 more
+[23:02:24][LostHandler-3] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,54617429,10053783,false,2017-10-20 22:28:55.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[23:02:28][LostHandler-0] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.129] port[25083] name[homeland2] cmd[updateHomeLandMemberInfo] params[192.168.140.169:20009,254560619,10004804,false,2017-10-20 13:03:38.0]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy57.updateHomeLandMemberInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandHandle.handleUserLoginStateChanged(HomeLandHandle.java:257)
+	at com.altratek.altraserver.extensions.service.homeland.HomeLandService.handleUserExit(HomeLandService.java:147)
+	at sun.reflect.GeneratedMethodAccessor297.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.event.EventDispatcher.doEvent(EventDispatcher.java:126)
+	at com.altratek.altraserver.extensions.event.SynEventDispatcher.dispatchEvent(SynEventDispatcher.java:24)
+	at com.altratek.altraserver.extensions.base.UserStateNotify$LogoutHandler.run(UserStateNotify.java:95)
+	at com.altratek.altraserver.extensions.base.UserStateNotify.notifyLogout(UserStateNotify.java:53)
+	at com.altratek.altraserver.extensions.service.user.UserExtension.onInternalEvent(UserExtension.java:70)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:246)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleInternalEvent(ExtensionSupport.java:235)
+	at com.altratek.altraserver.event.SystemEventDispatcher.dispatchEvent(SystemEventDispatcher.java:103)
+	at com.altratek.altraserver.event.SystemEventDispatcher.triggerUserLost(SystemEventDispatcher.java:47)
+	at com.altratek.altraserver.handler.LostHandler.lostBottomHalf(LostHandler.java:67)
+	at com.altratek.altraserver.handler.LostHandler.access$0(LostHandler.java:61)
+	at com.altratek.altraserver.handler.LostHandler$LostBottomHalfWork.run(LostHandler.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 30 more
+[23:30:33][MsgHandler-9] CClient$DefaultRemoteClientMonitor.handleThrowable - <App invoke failed> ip[192.168.140.29] port[25070] name[masterapprenticev2] cmd[getInfo] params[43983296]
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketTimeoutException: Read timed out
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:304)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy6.exe(Unknown Source)
+	at com.baitian.app.common.client.ClientBuilder$RemoteHandler.invoke(ClientBuilder.java:93)
+	at com.sun.proxy.$Proxy55.getInfo(Unknown Source)
+	at com.altratek.altraserver.extensions.service.master_apprenticev2.MasterApprenticeV2Handler.queryInfo(MasterApprenticeV2Handler.java:77)
+	at com.altratek.altraserver.extensions.service.master_apprenticev2.MasterApprenticeV2Extension.queryInfo(MasterApprenticeV2Extension.java:49)
+	at sun.reflect.GeneratedMethodAccessor762.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.altratek.altraserver.extensions.base.ExtensionSupport.handleRequest(ExtensionSupport.java:406)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleObjectReq(ExtensionHandler.java:99)
+	at com.altratek.altraserver.handler.ExtensionHandler.handleEvent(ExtensionHandler.java:53)
+	at com.altratek.altraserver.lib.ServerEvent.handleEvent(ServerEvent.java:23)
+	at com.altratek.altraserver.handler.InMsgHandlerWorker.run(InMsgHandlerWorker.java:29)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246)
+	... 17 more
+[23:59:08][Selector] ServerLogger.errorf - msg seq no match : User[2, altraserver-admin], in/tar[0/79]
+[23:59:10][RemoteMessageHandler-Thread] ServerLogger.error - ~~~ext log~~~ PostOffice message handler thread stopped.
+[23:59:10][shutdown] MyLogger.log - rt-data-httpif:发送程序正在关闭，持续最大 50秒后，直接退出.
+[23:59:20][shutdown] ServerLogger.error - ~~~ext log~~~ finish Extension Destory work! ~~Ignore this error~~
